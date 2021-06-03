@@ -15,3 +15,17 @@ android:onClick in XML & onClick using interfaces in android works same
     />
     
    here, when the "Test Button" is pressed , "Test_function" is executed from  'mainactivity.java' 
+   It is implemented internally in the java code as;
+     
+   ...
+   ...
+   ...
+   
+    public class TestClickListener implements OnClickListener{
+      @override
+      public void onCLick(View view){
+        Test_function();
+      }
+      
+    }
+   
