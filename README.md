@@ -119,7 +119,7 @@ android:onClick in XML & onClick using interfaces in android works same
           
           /// Set a clicklistener on that view
           
-          objforView.setOnClickListener( new View.OnCLickListener){
+          objforView.setOnClickListener( new View.OnCLickListener {
           
               // The code in this method will be executed when the  View is clicked on.
               
