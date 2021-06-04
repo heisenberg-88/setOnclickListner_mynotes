@@ -76,7 +76,7 @@ android:onClick in XML & onClick using interfaces in android works same
           
           /// Create a new object for exampleClickListener
           
-          exampleClickListener objectForClcikListener = new exampleClickListener();
+          exampleClickListener objectForClickListener = new exampleClickListener();
           
           // Create the Object for the View on which we have to implement this clicklistener , here i'm taking TexView as an example
           
@@ -90,6 +90,24 @@ android:onClick in XML & onClick using interfaces in android works same
           
       }
       
+      
+ ----------------------------------------------------------------------------
+ ############################################################################
+ 
+ Without typing these many lines, we can directly us onClickListener in the "mainactivity.java" file.
+ 
+ => first change :
+  without creating object, we can directly use it
+  
+  remove following line from above code
+    
+    exampleClickListener objectForClickListener = new exampleClickListener();
+    
+  use it directly inside setOnClickListener -
+   
+    objforView.setOnClickListener(new exampleClickListener());
+    
+  
      
     
     
