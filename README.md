@@ -80,7 +80,12 @@ android:onClick in XML & onClick using interfaces in android works same
           
           // Create the Object for the View on which we have to implement this clicklistener , here i'm taking TexView as an example
           
-          TextView
+          TextView objforView = (TextView) findViewById(R.id.textview_id);
+          
+          // set clicklistener on that view (i.e. objforView in this example)
+          // pass objectForClcikListener inside the setOnClickListener method
+          
+          objforView.setOnClickListener(objectForClcikListener);
           
           
       }
