@@ -130,7 +130,7 @@ android:onClick in XML & onClick using interfaces in android works same
                   .....
               }
           
-          };
+          });
           
           
           
