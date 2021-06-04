@@ -41,7 +41,7 @@ android:onClick in XML & onClick using interfaces in android works same
    
    without using XML with android:onClick="Test_function()"
    we can use setOnClickListener,
-   Create a java class file in android project java folder
+   Create a java class file exampleClickListener.java in android project java folder
     
     ...
     ...
@@ -94,7 +94,7 @@ android:onClick in XML & onClick using interfaces in android works same
  ----------------------------------------------------------------------------
  ############################################################################
  
- Without typing these many lines, we can directly us onClickListener in the "mainactivity.java" file.
+ Without typing these many lines, we can directly use onClickListener in the "mainactivity.java" file.
  
  => first change :
   without creating object, we can directly use it
@@ -106,6 +106,40 @@ android:onClick in XML & onClick using interfaces in android works same
   use it directly inside setOnClickListener -
    
     objforView.setOnClickListener(new exampleClickListener());
+    
+    
+  we can also directly define the onClick method in "mainactivity.java" file.
+  first delete the "exampleClickListener.java" class file.
+  
+    ///// Inside the onCreate method ;
+            
+          ///// create the object for TextView.
+          
+          TextView objforView = (TextView) findViewById(R.id.textview_id);
+          
+          /// Set a clicklistener on that view
+          
+          objforView.setOnClickListener( new View.OnCLickListener){
+          
+              // The code in this method will be executed when the  View is clicked on.
+              
+              @override
+              public void onClick(View view){
+                  ...
+                  ..  ///// write the code you want to execute after pressing the button/View/onclick .
+                  .....
+              }
+          
+          };
+          
+          
+          
+          
+          
+  
+    
+    
+   
     
   
      
