@@ -15,7 +15,7 @@ android:onClick in XML & onClick using interfaces in android works same
     />
     
    here, when the "Test Button" is pressed , "Test_function" is executed from  'mainactivity.java' 
-   It is implemented internally in the java code as;
+   It is implemented internally in the java code as,
      
    ...
    ...
@@ -28,4 +28,37 @@ android:onClick in XML & onClick using interfaces in android works same
       }
       
     }
+    
+   internally the onClick() method is as above.
+    
+   we can use setonclicklistener by defining own function onClick() , by using interfaces
+   interfaces are the classes which are not implemented
+   -No state 
+   -All methods are abstract(not implemented
+   
+   
+   without using XML with android:onClick="Test_function()"
+   we can use setOnClickListener,
+   Create a java class 
+    
+    ...
+    ...
+    ...
+    
+    public class exampleClickListener implements View.onClickListener {
+      
+      @override
+      public void onClick(View view){
+        ....
+        ... ///// write the code you want to execute after pressing the button/onclick .
+        ....
+      }
+    
+    }
+   
+   
+    
+    
+    
+  
    
